@@ -1,9 +1,8 @@
-import Footer from "../componentes/footer";
+import { Footer } from "../componentes/footer";
 import { InfoPersonal } from "./InfoPersonal";
 import { Contacto } from "./Contacto";
 import { Proyectos } from "./Proyectos";
-import { Bienvenida } from "./Bienvenido";
-import { Navbar } from "../componentes/Navbar";
+
 import { useState } from "react";
 export default function Home() {
   const [seccion, setSeccion] = useState("yo");
