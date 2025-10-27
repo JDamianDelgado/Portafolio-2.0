@@ -1,14 +1,19 @@
 body {
   height: 100%;
-  width: 100vw;
+  width: 100%;
   font-family: Arial, Helvetica, sans-serif;
   background: radial-gradient(circle, rgb(43, 24, 43), black);
+  margin: 0;
+  padding: 0;
 }
 .contenedorGeneral {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
   align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
 }
 
 .subContenedor {
@@ -18,8 +23,11 @@ body {
   align-items: center;
   text-align: center;
   height: 100%;
-  width: 70%;
+  width: 100%;
+  max-width: 800px;
   color: white;
+  border-radius: 12px;
+  box-sizing: border-box;
 }
 /* efecto del texto */
 .textEfect {
@@ -213,9 +221,9 @@ a {
 .navbar {
   background: linear-gradient(135deg, #47295c, #352041);
   width: 80vw;
-  margin: 2rem auto;
+  margin: 0.5rem auto;
   border-radius: 20px;
-  padding: 1rem 2rem;
+  padding: 1rem 1rem;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -258,4 +266,132 @@ a {
   padding: 1rem 0;
   text-align: center;
   width: 100vw;
+}
+
+/* responsive tablets/smartphone */
+@media (max-width: 768px) {
+  body {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .contenedorGeneral {
+    width: 100vw;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .presentacion-imagen {
+    width: 80%;
+  }
+
+  .boxText {
+    max-width: 80%;
+    min-width: 75%;
+    color: #e6e6e6;
+    box-shadow: 0 4px 20px rgba(233, 230, 230, 0.3);
+  }
+
+  .boxText > img {
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 0 5px 10px #633b63;
+  }
+  .contenedor-Herramienta {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    object-fit: cover;
+  }
+
+  .carrousel {
+    flex-wrap: wrap;
+    display: flex;
+    padding: 0.5rem;
+  }
+  .herramienta {
+    padding: 1rem;
+    text-align: center;
+    width: 100%;
+    font-size: large;
+  }
+
+  .carrousel-item {
+    text-align: center;
+    background: rgba(151, 146, 146, 0.075);
+    box-shadow: 0 14px 14px rgba(3, 3, 3, 0.25);
+    height: 8rem;
+    width: 7rem;
+  }
+  .carrousel-item > img {
+    width: 6.2rem;
+    height: auto;
+    object-fit: contain;
+  }
+
+  .card {
+    background: linear-gradient(to bottom, rgb(8, 7, 8), rgb(86, 47, 112));
+    width: 100%;
+    min-width: 80%;
+    height: auto;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+    box-shadow: 0 5px 10px rgb(83, 83, 83);
+  }
+
+  .card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-bottom: 0.3rem;
+  }
+
+  .card p {
+    margin-bottom: 2rem;
+  }
+
+  .contenedorContacto {
+    height: 100%;
+    width: 100%;
+  }
+
+  .dataContenedor > a > img {
+    height: 8rem;
+  }
+  .dataContenedor > a > p,
+  a {
+    color: rgba(255, 255, 255, 0.63);
+  }
+
+  .navbar {
+    width: 90%;
+    margin: 0rem;
+
+    border-radius: 20px;
+    padding: 0.5rem;
+    justify-content: space-between;
+    box-shadow: 0 4px 15px rgba(221, 218, 218, 0.3);
+    font-size: medium;
+    color: white;
+  }
+  .navbar > button {
+    all: unset;
+    font-weight: 600;
+    padding: 0.6rem 1.6rem;
+    border-radius: 12px;
+    position: relative;
+    text-align: center;
+  }
+
+  .footer {
+    background-color: #47295c;
+    color: white;
+    font-size: small;
+    padding: 0.5rem 0;
+    text-align: center;
+    width: 100%;
+  }
 }
