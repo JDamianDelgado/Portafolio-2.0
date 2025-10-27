@@ -46,7 +46,7 @@ export function InfoPersonal() {
               </strong>
               <br />
               <a
-                href="./archivos/DelgadoJoaquin-CV.pdf"
+                href="./archivos/Joaquin-D-Delgado-FullStackDeveloper.pdf"
                 download
                 className="text-blue-500 hover:text-blue-700"
               >
