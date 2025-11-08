@@ -68,6 +68,15 @@ export const proyectos = [
     url: "https://github.com/JDamianDelgado/Registro-React",
   },
   {
+    slug: "dragon-ballz-react",
+    title: "Dragon Ball Z - Explorador de Personajes",
+    description:
+      "Aplicación interactiva desarrollada con React que permite explorar personajes del universo Dragon Ball Z. Incluye cards con efectos de zoom, vista detallada de cada personaje, y diseño totalmente responsive. Se trabajó con peticiones a API externas, manejo de estados, y componentes reutilizables.",
+    technologies: ["React", "Axios", "Redux Toolkit", "CSS", "Vite"],
+    images: "/image/proyectos/ReactApiExterna/captura1.png",
+    url: "https://react-api-externa-esx53o9om-jdamiandelgados-projects.vercel.app/planetas",
+  },
+  {
     slug: "Proximamente",
     title: "",
     description: "Proximamente nuevos proyectos con nuevas tecnologias...",
