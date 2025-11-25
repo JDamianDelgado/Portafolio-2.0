@@ -1,5 +1,15 @@
 export const proyectos = [
   {
+    slug: "Clon de chat",
+    title: "Clon de chat con respuesta automatica",
+    description:
+      "Clon de un sistema de mensajería donde los usuarios pueden agregar contactos, enviar y recibir mensajes en tiempo real, y ver respuestas automáticas. Desarrollado en React con hooks y estados, simulando un backend con mock. Además, es responsive para diferentes dispositivos.",
+
+    technologies: ["React", "Hooks"],
+    images: "/image/proyectos/ClonChat/screenShot3.png",
+    url: "https://clone-chat-react.vercel.app/",
+  },
+  {
     slug: "manejo-de-api",
     title: "Manejo de APIs con React",
     description:
@@ -7,6 +17,15 @@ export const proyectos = [
     technologies: ["React", "FastAPI", "Tailwind"],
     images: "/image/proyectos/Apis/img1.png",
     url: "https://github.com/JDamianDelgado/ApiRestFul-Practice",
+  },
+  {
+    slug: "dragon-ballz-react",
+    title: "Dragon Ball Z - Explorador de Personajes",
+    description:
+      "Aplicación interactiva desarrollada con React que permite explorar personajes del universo Dragon Ball Z. Incluye cards con efectos de zoom, vista detallada de cada personaje, y diseño totalmente responsive. Se trabajó con peticiones a API externas, manejo de estados, y componentes reutilizables.",
+    technologies: ["React", "Axios", "Redux Toolkit", "CSS", "Vite"],
+    images: "/image/proyectos/ReactApiExterna/captura1.png",
+    url: "https://react-vite-consumiendo-una-api-exte-five.vercel.app/",
   },
   {
     slug: "ecommerce",
@@ -67,15 +86,7 @@ export const proyectos = [
     images: "/image/proyectos/React/image.png",
     url: "https://github.com/JDamianDelgado/Registro-React",
   },
-  {
-    slug: "dragon-ballz-react",
-    title: "Dragon Ball Z - Explorador de Personajes",
-    description:
-      "Aplicación interactiva desarrollada con React que permite explorar personajes del universo Dragon Ball Z. Incluye cards con efectos de zoom, vista detallada de cada personaje, y diseño totalmente responsive. Se trabajó con peticiones a API externas, manejo de estados, y componentes reutilizables.",
-    technologies: ["React", "Axios", "Redux Toolkit", "CSS", "Vite"],
-    images: "/image/proyectos/ReactApiExterna/captura1.png",
-    url: "https://react-vite-consumiendo-una-api-exte-five.vercel.app/",
-  },
+
   {
     slug: "Proximamente",
     title: "",
