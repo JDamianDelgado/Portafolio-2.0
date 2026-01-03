@@ -13,7 +13,7 @@ export const proyectos = [
     slug: "Simulador chat Angular",
     title: "Clon de chat con Angular",
     description:
-      "Simulador de chat utilizando una arquitectura basada en componentes, servicios y pipes, donde estos últimos se emplean para mostrar información como la última conexión y la fecha de los mensajes. Además, la aplicación permite la creación de nuevos chats y la asignación de imágenes mediante una URL genérica y permite buscar el chat por el nombre.Para el diseño visual, se utilizaron plantillas CSS individuales por componente, permitiendo una mejor organización y mantenimiento de estilos.La base de datos está representada mediante un mock con datos precargados, lo que facilita la simulación del funcionamiento del sistema sin necesidad de un backend real.Los distintos componentes fueron unificados a través de un componente Layout, con el objetivo de ofrecer una interfaz clara y amigable para el usuario.",
+      "Simulador de chat desarrollado con una arquitectura basada en componentes, servicios y pipes, utilizados para mostrar la última conexión y la fecha de los mensajes. La aplicación permite crear y buscar chats por nombre, asignar imágenes mediante una URL genérica y utiliza estilos CSS individuales por componente. Los datos se manejan mediante un mock precargado y los componentes se integran a través de un Layout para ofrecer una interfaz clara y amigable",
 
     technologies: ["Angular", "Routes", "Pipes", "Servicios", "Componentes"],
     images: "/image/proyectos/ClonChatAngular/image.png",
