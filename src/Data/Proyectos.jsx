@@ -51,7 +51,7 @@ export const proyectos = [
       "JWT",
     ],
     images: "/image/proyectos/petshop/img2.png",
-    url: "https://github.com/JDamianDelgado/EccommercePetShop",
+    url: "https://eccommerce-pet-shop-w8px.vercel.app/",
   },
   {
     slug: "gestor-de-turnos",
