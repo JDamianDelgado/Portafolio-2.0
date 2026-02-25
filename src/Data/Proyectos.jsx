@@ -1,5 +1,23 @@
 export const proyectos = [
   {
+    slug: "agenda-turnos-app",
+    title: "Agenda de turnos con gestión completa",
+    description:
+      "Aplicación de agenda de turnos que permite a usuarios registrarse y reservar, a profesionales crear y administrar horarios de atención, y a administradores gestionar usuarios y turnos. Desarrollada con React, Node.js, NestJS y PostgreSQL, incluye autenticación JWT, manejo global de estados con Redux, tipado con TypeScript y notificaciones por correo electrónico.",
+    technologies: [
+      "React",
+      "Redux",
+      "NodeJS",
+      "PostgreSQL",
+      "NestJS",
+      "JWT",
+      "Typescript",
+    ],
+    images: "/image/proyectos/AgendaTurnos/agenda.png",
+    url: "https://pagina-elizabeth.vercel.app/",
+  },
+
+  {
     slug: "Clon de chat",
     title: "Clon de chat con respuesta automatica",
     description:
