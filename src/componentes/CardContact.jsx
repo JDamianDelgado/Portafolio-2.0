@@ -10,7 +10,10 @@ export function CardContact({ plataforma, direccion, imagen, visible }) {
           <img src={imagen} alt={plataforma} />
         </div>
         <p className="contactPlatform">{plataforma}</p>
-        <p className="contactVisible">{visible}</p>
+
+        {plataforma !== "Whatsapp" && (
+          <p className="contactVisible">{visible}</p>
+        )}
         <span className="contactCTA">{ctaText}</span>
       </a>
     </article>
