@@ -1,10 +1,10 @@
 export function Carrusel({ list }) {
   return (
     <div className="carrousel">
-      {list.map((list, index) => (
-        <div className="carrousel-item" key={index + list.name}>
-          <img src={list.image} alt={list.name} />
-          <div className="carrousel-name">{list.name}</div>
+      {list.map((item, index) => (
+        <div className="carrousel-item" key={`${item.name}-${index}`}>
+          <img src={item.image} alt={item.name} />
+          <div className="carrousel-name">{item.name}</div>
         </div>
       ))}
     </div>

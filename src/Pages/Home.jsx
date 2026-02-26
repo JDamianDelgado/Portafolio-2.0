@@ -9,9 +9,24 @@ export default function Home() {
   return (
     <div className="contenedorGeneral">
       <div className="navbar">
-        <button onClick={() => setSeccion("yo")}>Sobre mi</button>
-        <button onClick={() => setSeccion("proyectos")}>Proyectos</button>
-        <button onClick={() => setSeccion("contacto")}>Contacto</button>
+        <button
+          onClick={() => setSeccion("yo")}
+          className={seccion === "yo" ? "active" : ""}
+        >
+          Sobre mi
+        </button>
+        <button
+          onClick={() => setSeccion("proyectos")}
+          className={seccion === "proyectos" ? "active" : ""}
+        >
+          Proyectos
+        </button>
+        <button
+          onClick={() => setSeccion("contacto")}
+          className={seccion === "contacto" ? "active" : ""}
+        >
+          Contacto
+        </button>
       </div>
       {seccion === "yo" && <InfoPersonal />}
       {seccion === "proyectos" && <Proyectos />}

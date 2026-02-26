@@ -20,17 +20,17 @@ export function CardProyectos({
         <h1>{titulo}</h1>
         <h2>{name}</h2>
         <button onClick={() => setView(!view)} className="botonVerMas">
-          Descripcion
+          {view ? "Ocultar descripcion" : "Ver descripcion"}
         </button>
 
         {view && (
           <div className="verMas">
             <p>{description}</p>
-            <li>
+            <ul className="tecnologiasLista">
               {tecnologias.map((tecnologia) => (
                 <li key={tecnologia}>{tecnologia}</li>
               ))}
-            </li>
+            </ul>
           </div>
         )}
       </div>

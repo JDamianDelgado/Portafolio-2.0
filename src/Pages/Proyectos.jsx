@@ -4,7 +4,15 @@ import { CardProyectos } from "../componentes/CardProyectos";
 export function Proyectos() {
   return (
     <div className="subContenedor">
-      <h1>Mis Proyectos</h1>
+      <section className="projectsHeader">
+        <p className="sectionEyebrow">Portafolio</p>
+        <h1>Proyectos destacados</h1>
+        <p>
+          Soluciones desarrolladas para practicar arquitectura full stack,
+          experiencia de usuario y desarrollo de funcionalidades reales.
+        </p>
+      </section>
+
       <div className="proyectos">
         {proyectos.map((project) => (
           <div key={project.slug} style={{ textDecoration: "none" }}>
