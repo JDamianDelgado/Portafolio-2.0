@@ -1,8 +1,23 @@
 import { tecnologias } from "../Data/Tecnologias";
 import TypingEffect from "../componentes/TyppingEffect";
 import { Carrusel } from "../componentes/Carrousel";
+import { motion } from "framer-motion";
 
 export function InfoPersonal() {
+  const fadeUp = {
+    hidden: { opacity: 0, y: 24 },
+    visible: { opacity: 1, y: 0 },
+  };
+
+  const staggerContainer = {
+    hidden: {},
+    visible: {
+      transition: {
+        staggerChildren: 0.09,
+      },
+    },
+  };
+
   const consoleLines = [
     "$ npm run build",
     "vite v7.1.12 building for production...",
@@ -33,7 +48,13 @@ export function InfoPersonal() {
   return (
     <div className="contenedorGeneral">
       <div className="subContenedor">
-        <div className="presentacion">
+        <motion.div
+          className="presentacion"
+          variants={fadeUp}
+          initial="hidden"
+          animate="visible"
+          transition={{ duration: 0.45, ease: "easeOut" }}
+        >
           <img
             className="presentacion-imagen"
             src="/image/FotoPerfil.jpg"
@@ -47,18 +68,36 @@ export function InfoPersonal() {
             Construyo productos web enfocados en rendimiento, escalabilidad y
             experiencia de usuario.
           </p>
-        </div>
+        </motion.div>
 
-        <section className="highlightSection">
+        <motion.section
+          className="highlightSection"
+          variants={staggerContainer}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.25 }}
+        >
           {highlights.map((item) => (
-            <article className="highlightCard" key={item.title}>
+            <motion.article
+              className="highlightCard"
+              key={item.title}
+              variants={fadeUp}
+              transition={{ duration: 0.35, ease: "easeOut" }}
+            >
               <p className="highlightTitle">{item.title}</p>
               <p className="highlightValue">{item.value}</p>
-            </article>
+            </motion.article>
           ))}
-        </section>
+        </motion.section>
 
-        <div className="contenedor-boxText">
+        <motion.div
+          className="contenedor-boxText"
+          variants={fadeUp}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.2 }}
+          transition={{ duration: 0.45, ease: "easeOut" }}
+        >
           <div className="boxText">
             <p className="boxTextEyebrow">Por que trabajar conmigo</p>
             <p>
@@ -106,7 +145,7 @@ export function InfoPersonal() {
               </p>
               <div className="cvActions">
                 <a
-                  href="./archivos/Joaquin-D-Delgado-FullStackDeveloper.pdf"
+                  href="./archivos/Joaquin-Delgado-FullStackDeveloper.pdf"
                   download
                   className="cvBtnPrimary"
                 >
@@ -121,41 +160,76 @@ export function InfoPersonal() {
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
 
-        <section className="servicesSection">
+        <motion.section
+          className="servicesSection"
+          variants={fadeUp}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.2 }}
+          transition={{ duration: 0.45, ease: "easeOut" }}
+        >
           <h2>Como puedo aportar valor</h2>
-          <div className="servicesGrid">
+          <motion.div
+            className="servicesGrid"
+            variants={staggerContainer}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.2 }}
+          >
             {services.map((service) => (
-              <article key={service} className="serviceCard">
+              <motion.article
+                key={service}
+                className="serviceCard"
+                variants={fadeUp}
+                transition={{ duration: 0.35, ease: "easeOut" }}
+              >
                 <p>{service}</p>
-              </article>
+              </motion.article>
             ))}
-          </div>
-        </section>
+          </motion.div>
+        </motion.section>
 
-        <div className="contenedor-Herramienta">
-          <h1 className="herramienta">Lenguajes</h1>
+        <motion.div
+          className="contenedor-Herramienta"
+          variants={fadeUp}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.2 }}
+          transition={{ duration: 0.45, ease: "easeOut" }}
+        >
+          <motion.h1 className="herramienta" whileHover={{ y: -2, scale: 1.01 }}>
+            Lenguajes
+          </motion.h1>
           <div className="contenedorCarrousel">
             <Carrusel list={tecnologias.lenguajes} />
           </div>
-          <h1 className="herramienta">Frontend</h1>
+          <motion.h1 className="herramienta" whileHover={{ y: -2, scale: 1.01 }}>
+            Frontend
+          </motion.h1>
           <div className="contenedorCarrousel">
             <Carrusel list={tecnologias.frontend} />
           </div>
-          <h1 className="herramienta">Backend</h1>
+          <motion.h1 className="herramienta" whileHover={{ y: -2, scale: 1.01 }}>
+            Backend
+          </motion.h1>
           <div className="contenedorCarrousel">
             <Carrusel list={tecnologias.backend} />
           </div>
-          <h1 className="herramienta">Base de Datos</h1>
+          <motion.h1 className="herramienta" whileHover={{ y: -2, scale: 1.01 }}>
+            Base de Datos
+          </motion.h1>
           <div className="contenedorCarrousel">
             <Carrusel list={tecnologias.basesDeDatos} />
           </div>
-          <h1 className="herramienta">Herramientas</h1>
+          <motion.h1 className="herramienta" whileHover={{ y: -2, scale: 1.01 }}>
+            Herramientas
+          </motion.h1>
           <div className="contenedorCarrousel">
             <Carrusel list={tecnologias.herramientas} />
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

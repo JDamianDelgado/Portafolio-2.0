@@ -1,21 +1,43 @@
 import { proyectos } from "../Data/Proyectos";
 import { CardProyectos } from "../componentes/CardProyectos";
+import { motion } from "framer-motion";
 
 export function Proyectos() {
   return (
     <div className="subContenedor">
-      <section className="projectsHeader">
+      <motion.section
+        className="projectsHeader"
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.35, ease: "easeOut" }}
+      >
         <p className="sectionEyebrow">Portafolio</p>
         <h1>Proyectos destacados</h1>
         <p>
           Soluciones desarrolladas para practicar arquitectura full stack,
           experiencia de usuario y desarrollo de funcionalidades reales.
         </p>
-      </section>
+      </motion.section>
 
-      <div className="proyectos">
-        {proyectos.map((project) => (
-          <div key={project.slug} style={{ textDecoration: "none" }}>
+      <motion.div
+        className="proyectos"
+        initial="hidden"
+        animate="visible"
+        variants={{
+          hidden: {},
+          visible: { transition: { staggerChildren: 0.1, delayChildren: 0.1 } },
+        }}
+      >
+        {proyectos.map((project, index) => (
+          <motion.div
+            key={project.slug}
+            style={{ textDecoration: "none" }}
+            variants={{
+              hidden: { opacity: 0, y: 20 },
+              visible: { opacity: 1, y: 0 },
+            }}
+            transition={{ duration: 0.35, ease: "easeOut", delay: index * 0.03 }}
+          >
             <CardProyectos
               titulo={project.title}
               name={project.name}
@@ -25,9 +47,9 @@ export function Proyectos() {
               url={project.url}
               tecnologias={project.technologies}
             />
-          </div>
+          </motion.div>
         ))}
-      </div>
+      </motion.div>
     </div>
   );
 }

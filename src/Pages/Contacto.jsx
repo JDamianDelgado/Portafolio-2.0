@@ -1,20 +1,38 @@
 import { CardContact } from "../componentes/CardContact";
 import { DatosContacto } from "../Data/DatosContacto";
+import { motion } from "framer-motion";
+
+const fadeUp = {
+  hidden: { opacity: 0, y: 20 },
+  visible: { opacity: 1, y: 0 },
+};
 
 export function Contacto() {
   return (
     <div className="subContenedor">
-      <section className="contactHeader">
+      <motion.section
+        className="contactHeader"
+        variants={fadeUp}
+        initial="hidden"
+        animate="visible"
+        transition={{ duration: 0.35, ease: "easeOut" }}
+      >
         <p className="sectionEyebrow">Contacto</p>
         <h1>Hablemos de tu proximo proyecto</h1>
         <p>
           Si buscas sumar un desarrollador para tu equipo o necesitas apoyo
           freelance, escribime por el canal que prefieras.
         </p>
-      </section>
+      </motion.section>
 
       <section className="contactLayout">
-        <article className="contactSummaryCard">
+        <motion.article
+          className="contactSummaryCard"
+          variants={fadeUp}
+          initial="hidden"
+          animate="visible"
+          transition={{ duration: 0.4, delay: 0.08, ease: "easeOut" }}
+        >
           <h2>Disponibilidad actual</h2>
           <p>
             Abierto a oportunidades laborales y colaboraciones freelance en
@@ -35,19 +53,28 @@ export function Contacto() {
               Escribir por WhatsApp
             </a>
           </div>
-        </article>
+        </motion.article>
 
-        <div className="contenedorContacto">
-          {DatosContacto.map((datos) => (
+        <motion.div
+          className="contenedorContacto"
+          initial="hidden"
+          animate="visible"
+          variants={{
+            hidden: {},
+            visible: { transition: { staggerChildren: 0.08, delayChildren: 0.1 } },
+          }}
+        >
+          {DatosContacto.map((datos, index) => (
             <CardContact
               key={datos.direccion}
               plataforma={datos.plataforma}
               direccion={datos.direccion}
               imagen={datos.imagen}
               visible={datos.visible}
+              delay={index * 0.04}
             />
           ))}
-        </div>
+        </motion.div>
       </section>
     </div>
   );
