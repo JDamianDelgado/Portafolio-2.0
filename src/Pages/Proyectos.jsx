@@ -36,7 +36,11 @@ export function Proyectos() {
               hidden: { opacity: 0, y: 20 },
               visible: { opacity: 1, y: 0 },
             }}
-            transition={{ duration: 0.35, ease: "easeOut", delay: index * 0.03 }}
+            transition={{
+              duration: 0.35,
+              ease: "easeOut",
+              delay: index * 0.03,
+            }}
           >
             <CardProyectos
               titulo={project.title}

@@ -24,7 +24,7 @@ export const proyectos = [
       "Clon de un sistema de mensajería donde los usuarios pueden agregar contactos, enviar y recibir mensajes en tiempo real, y ver respuestas automáticas. Desarrollado en React con hooks y estados, simulando un backend con mock. Además, es responsive para diferentes dispositivos.",
 
     technologies: ["React", "Hooks"],
-    images: "/image/proyectos/ClonChat/screenShot3.png",
+    images: "/image/proyectos/ClonChat/image.png",
     url: "https://clone-chat-react.vercel.app/",
   },
   {
