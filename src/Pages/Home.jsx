@@ -2,6 +2,8 @@ import { Footer } from "../componentes/Footer";
 import { InfoPersonal } from "./InfoPersonal";
 import { Contacto } from "./Contacto";
 import { Proyectos } from "./Proyectos";
+
+// eslint-disable-next-line no-unused-vars
 import { AnimatePresence, motion } from "framer-motion";
 
 import { useState } from "react";

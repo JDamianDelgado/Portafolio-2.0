@@ -1,6 +1,7 @@
 import { tecnologias } from "../Data/Tecnologias";
 import TypingEffect from "../componentes/TyppingEffect";
 import { Carrusel } from "../componentes/Carrousel";
+// eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
 
 export function InfoPersonal() {
@@ -199,31 +200,46 @@ export function InfoPersonal() {
           viewport={{ once: true, amount: 0.2 }}
           transition={{ duration: 0.45, ease: "easeOut" }}
         >
-          <motion.h1 className="herramienta" whileHover={{ y: -2, scale: 1.01 }}>
+          <motion.h1
+            className="herramienta"
+            whileHover={{ y: -2, scale: 1.01 }}
+          >
             Lenguajes
           </motion.h1>
           <div className="contenedorCarrousel">
             <Carrusel list={tecnologias.lenguajes} />
           </div>
-          <motion.h1 className="herramienta" whileHover={{ y: -2, scale: 1.01 }}>
+          <motion.h1
+            className="herramienta"
+            whileHover={{ y: -2, scale: 1.01 }}
+          >
             Frontend
           </motion.h1>
           <div className="contenedorCarrousel">
             <Carrusel list={tecnologias.frontend} />
           </div>
-          <motion.h1 className="herramienta" whileHover={{ y: -2, scale: 1.01 }}>
+          <motion.h1
+            className="herramienta"
+            whileHover={{ y: -2, scale: 1.01 }}
+          >
             Backend
           </motion.h1>
           <div className="contenedorCarrousel">
             <Carrusel list={tecnologias.backend} />
           </div>
-          <motion.h1 className="herramienta" whileHover={{ y: -2, scale: 1.01 }}>
+          <motion.h1
+            className="herramienta"
+            whileHover={{ y: -2, scale: 1.01 }}
+          >
             Base de Datos
           </motion.h1>
           <div className="contenedorCarrousel">
             <Carrusel list={tecnologias.basesDeDatos} />
           </div>
-          <motion.h1 className="herramienta" whileHover={{ y: -2, scale: 1.01 }}>
+          <motion.h1
+            className="herramienta"
+            whileHover={{ y: -2, scale: 1.01 }}
+          >
             Herramientas
           </motion.h1>
           <div className="contenedorCarrousel">
