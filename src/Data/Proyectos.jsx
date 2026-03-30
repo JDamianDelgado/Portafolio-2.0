@@ -1,5 +1,22 @@
 export const proyectos = [
   {
+    slug: "gestor-tareas-app",
+    title: "Gestor de tareas con CRUD y estado",
+    description:
+      "Aplicación de gestión de tareas con listado, creación, edición y eliminación. El frontend está hecho con Next.js (React) y TypeScript, con estilos en Tailwind CSS. El backend es una API en FastAPI que expone endpoints REST y persiste datos en Supabase (PostgreSQL), se realiza deploy en Vercel, Render y Supabase para una experiencia completa.",
+    technologies: [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Python",
+      "FastAPI",
+      "Supabase",
+      "PostgreSQL",
+    ],
+    images: "/image/proyectos/GestorTareas/image.png",
+    url: "https://gestor-tareas-nine.vercel.app/",
+  },
+  {
     slug: "agenda-turnos-app",
     title: "Agenda de turnos con gestión completa",
     description:
