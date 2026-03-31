@@ -33,7 +33,23 @@ export const proyectos = [
     images: "/image/proyectos/AgendaTurnos/agenda.png",
     url: "https://pagina-elizabeth.vercel.app/",
   },
-
+  {
+    slug: "Analisis de datos con python",
+    title: "Análisis de datos con Python",
+    description:
+      "Aplicación para el análisis de datos utilizando Python y bibliotecas como Pandas y NumPy. Permite la manipulación y visualización de datos, incluyendo gráficos y estadísticas descriptivas.",
+    technologies: [
+      "Dataset(kaggle)",
+      "Python",
+      "Pandas",
+      "NumPy",
+      "Matplotlib",
+      "Seaborn",
+      "Streamlit",
+    ],
+    images: "/image/proyectos/AnalisisDatos/image.png",
+    url: "https://xznaf8p5ea7utwdm6som6t.streamlit.app/",
+  },
   {
     slug: "Clon de chat",
     title: "Clon de chat con respuesta automatica",
