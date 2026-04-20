@@ -1,5 +1,20 @@
 export const proyectos = [
   {
+    slug: "Portafolio en Next.js",
+    title: "Portafolio Personal en Next.js",
+    description:
+      "Desarrollo de un portafolio personal utilizando Next.js, con diseño responsive y optimización para SEO. El proyecto incluye secciones de información personal, proyectos destacados y datos de contacto, con animaciones suaves para mejorar la experiencia del usuario. Ademas de funcionalidades como dark mode, lenguaje, optimización de imágenes y despliegue en Vercel para una experiencia rápida y fluida.",
+    technologies: [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Framer Motion",
+      "Vercel",
+    ],
+    images: "/image/proyectos/PortafolioNext/image.png",
+    url: "https://portafolio-nextjs-neon.vercel.app/",
+  },
+  {
     slug: "gestor-tareas-app",
     title: "Gestor de tareas con CRUD y estado",
     description:
