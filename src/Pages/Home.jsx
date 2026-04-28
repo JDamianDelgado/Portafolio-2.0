@@ -11,10 +11,14 @@ export default function Home() {
   const [seccion, setSeccion] = useState("yo");
 
   useEffect(() => {
-    fetch("https://contador-python-47oo.onrender.com/visita")
-      .then((res) => res.json())
-      .then((data) => console.log("Visita registrada:", data))
-      .catch((err) => console.error("No se pudo registrar la visita:", err));
+    if (!localStorage.getItem("visit-registered")) {
+      fetch("https://contador-python-47oo.onrender.com/visita")
+        .then((res) => res.json())
+        .then(() => {
+          localStorage.setItem("visit-registered", "true");
+        })
+        .catch((err) => console.error("No se pudo registrar la visita:", err));
+    }
   }, []);
 
   const sectionVariants = {
