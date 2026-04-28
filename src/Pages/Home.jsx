@@ -6,9 +6,16 @@ import { Proyectos } from "./Proyectos";
 // eslint-disable-next-line no-unused-vars
 import { AnimatePresence, motion } from "framer-motion";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 export default function Home() {
   const [seccion, setSeccion] = useState("yo");
+
+  useEffect(() => {
+    fetch("https://contador-python-47oo.onrender.com/visita")
+      .then((res) => res.json())
+      .then((data) => console.log("Visita registrada:", data))
+      .catch((err) => console.error("No se pudo registrar la visita:", err));
+  }, []);
 
   const sectionVariants = {
     initial: { opacity: 0, y: 18 },
