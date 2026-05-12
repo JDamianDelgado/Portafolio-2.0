@@ -30,23 +30,23 @@ export const proyectos = [
     images: "/image/proyectos/PortafolioNext/image.png",
     url: "https://portafolio-nextjs-neon.vercel.app/",
   },
-  {
-    slug: "gestor-tareas-app",
-    title: "Gestor de tareas con CRUD y estado",
-    description:
-      "Aplicación de gestión de tareas con listado, creación, edición y eliminación. El frontend está hecho con Next.js (React) y TypeScript, con estilos en Tailwind CSS. El backend es una API en FastAPI que expone endpoints REST y persiste datos en Supabase (PostgreSQL), se realiza deploy en Vercel, Render y Supabase para una experiencia completa.",
-    technologies: [
-      "Next.js",
-      "TypeScript",
-      "Tailwind CSS",
-      "Python",
-      "FastAPI",
-      "Supabase",
-      "PostgreSQL",
-    ],
-    images: "/image/proyectos/GestorTareas/image.png",
-    url: "https://gestor-tareas-nine.vercel.app/",
-  },
+  // {
+  //   slug: "gestor-tareas-app",
+  //   title: "Gestor de tareas con CRUD y estado",
+  //   description:
+  //     "Aplicación de gestión de tareas con listado, creación, edición y eliminación. El frontend está hecho con Next.js (React) y TypeScript, con estilos en Tailwind CSS. El backend es una API en FastAPI que expone endpoints REST y persiste datos en Supabase (PostgreSQL), se realiza deploy en Vercel, Render y Supabase para una experiencia completa.",
+  //   technologies: [
+  //     "Next.js",
+  //     "TypeScript",
+  //     "Tailwind CSS",
+  //     "Python",
+  //     "FastAPI",
+  //     "Supabase",
+  //     "PostgreSQL",
+  //   ],
+  //   images: "/image/proyectos/GestorTareas/image.png",
+  //   url: "https://gestor-tareas-nine.vercel.app/",
+  // },
   {
     slug: "agenda-turnos-app",
     title: "Agenda de turnos con gestión completa",
@@ -64,43 +64,43 @@ export const proyectos = [
     images: "/image/proyectos/AgendaTurnos/agenda.png",
     url: "https://pagina-elizabeth.vercel.app/",
   },
-  {
-    slug: "Analisis de datos con python",
-    title: "Análisis de datos con Python",
-    description:
-      "Aplicación para el análisis de datos utilizando Python y bibliotecas como Pandas y NumPy. Permite la manipulación y visualización de datos, incluyendo gráficos y estadísticas descriptivas.",
-    technologies: [
-      "Dataset(kaggle)",
-      "Python",
-      "Pandas",
-      "NumPy",
-      "Matplotlib",
-      "Seaborn",
-      "Streamlit",
-    ],
-    images: "/image/proyectos/AnalisisDatos/image.png",
-    url: "https://xznaf8p5ea7utwdm6som6t.streamlit.app/",
-  },
-  {
-    slug: "Clon de chat",
-    title: "Clon de chat con respuesta automatica",
-    description:
-      "Clon de un sistema de mensajería donde los usuarios pueden agregar contactos, enviar y recibir mensajes en tiempo real, y ver respuestas automáticas. Desarrollado en React con hooks y estados, simulando un backend con mock. Además, es responsive para diferentes dispositivos.",
+  // {
+  //   slug: "Analisis de datos con python",
+  //   title: "Análisis de datos con Python",
+  //   description:
+  //     "Aplicación para el análisis de datos utilizando Python y bibliotecas como Pandas y NumPy. Permite la manipulación y visualización de datos, incluyendo gráficos y estadísticas descriptivas.",
+  //   technologies: [
+  //     "Dataset(kaggle)",
+  //     "Python",
+  //     "Pandas",
+  //     "NumPy",
+  //     "Matplotlib",
+  //     "Seaborn",
+  //     "Streamlit",
+  //   ],
+  //   images: "/image/proyectos/AnalisisDatos/image.png",
+  //   url: "https://xznaf8p5ea7utwdm6som6t.streamlit.app/",
+  // },
+  // {
+  //   slug: "Clon de chat",
+  //   title: "Clon de chat con respuesta automatica",
+  //   description:
+  //     "Clon de un sistema de mensajería donde los usuarios pueden agregar contactos, enviar y recibir mensajes en tiempo real, y ver respuestas automáticas. Desarrollado en React con hooks y estados, simulando un backend con mock. Además, es responsive para diferentes dispositivos.",
 
-    technologies: ["React", "Hooks"],
-    images: "/image/proyectos/ClonChat/image.png",
-    url: "https://clone-chat-react.vercel.app/",
-  },
-  {
-    slug: "Simulador chat Angular",
-    title: "Clon de chat con Angular",
-    description:
-      "Simulador de chat desarrollado con una arquitectura basada en componentes, servicios y pipes, utilizados para mostrar la última conexión y la fecha de los mensajes. La aplicación permite crear y buscar chats por nombre, asignar imágenes mediante una URL genérica y utiliza estilos CSS individuales por componente. Los datos se manejan mediante un mock precargado y los componentes se integran a través de un Layout para ofrecer una interfaz clara y amigable",
+  //   technologies: ["React", "Hooks"],
+  //   images: "/image/proyectos/ClonChat/image.png",
+  //   url: "https://clone-chat-react.vercel.app/",
+  // },
+  // {
+  //   slug: "Simulador chat Angular",
+  //   title: "Clon de chat con Angular",
+  //   description:
+  //     "Simulador de chat desarrollado con una arquitectura basada en componentes, servicios y pipes, utilizados para mostrar la última conexión y la fecha de los mensajes. La aplicación permite crear y buscar chats por nombre, asignar imágenes mediante una URL genérica y utiliza estilos CSS individuales por componente. Los datos se manejan mediante un mock precargado y los componentes se integran a través de un Layout para ofrecer una interfaz clara y amigable",
 
-    technologies: ["Angular", "Routes", "Pipes", "Servicios", "Componentes"],
-    images: "/image/proyectos/ClonChatAngular/image.png",
-    url: "https://angular-trabajo-final-chat-utn.vercel.app/chats/19",
-  },
+  //   technologies: ["Angular", "Routes", "Pipes", "Servicios", "Componentes"],
+  //   images: "/image/proyectos/ClonChatAngular/image.png",
+  //   url: "https://angular-trabajo-final-chat-utn.vercel.app/chats/19",
+  // },
   {
     slug: "manejo-de-api",
     title: "Manejo de APIs con React",
@@ -169,15 +169,15 @@ export const proyectos = [
     images: "/image/proyectos/valle de paz/image.png",
     url: "https://github.com/JDamianDelgado/ValleDePaz",
   },
-  {
-    slug: "registro-react",
-    title: "Formulario de Registro en React",
-    description:
-      "Proyecto práctico enfocado en el desarrollo de formularios interactivos con validación, manejo de estados y diseño responsive. Permite mejorar la experiencia del usuario y afianzar el uso de hooks y componentes controlados en React.",
-    technologies: ["React", "React Router", "React DOM", "CSS"],
-    images: "/image/proyectos/React/image.png",
-    url: "https://github.com/JDamianDelgado/Registro-React",
-  },
+  // {
+  //   slug: "registro-react",
+  //   title: "Formulario de Registro en React",
+  //   description:
+  //     "Proyecto práctico enfocado en el desarrollo de formularios interactivos con validación, manejo de estados y diseño responsive. Permite mejorar la experiencia del usuario y afianzar el uso de hooks y componentes controlados en React.",
+  //   technologies: ["React", "React Router", "React DOM", "CSS"],
+  //   images: "/image/proyectos/React/image.png",
+  //   url: "https://github.com/JDamianDelgado/Registro-React",
+  // },
 
   {
     slug: "Proximamente",
